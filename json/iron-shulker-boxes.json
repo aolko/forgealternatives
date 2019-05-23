@@ -1,0 +1,23 @@
+{
+  "mcmod": {
+    "curseforge": {
+      "id": 314911,
+      "slug": "iron-shulker-boxes"
+    },
+    "mcmeta": {
+      "version": "1.13.2"
+    },
+    "name": "Iron Shulker Boxes",
+    "description": "<p>Iron Shulker Boxes add different material versions of the Shulker Box including Iron, Gold, Diamond, Crystal.</p><p>With these new Shulker Boxes, you are able to store lots more items in them, break then and move them around with the items still in them unlike chests.</p><p>These shulker boxes used to be in Iron Chests and still are on versions before 1.13!</p>",
+    "icon": "https://media.forgecdn.net/avatars/thumbnails/191/748/120/120/636861240169664358.png",
+    "author": "alexbegt",
+    "urls": {
+      "download": "https://www.curseforge.com/minecraft/mc-mods/iron-shulker-boxes/download/2676783",
+      "www": "https://minecraft.curseforge.com/projects/iron-shulker-boxes",
+      "github": "https://github.com/progwml6/ironshulkerboxes/"
+    },
+    "tags": [
+      "storage"
+    ]
+  }
+}
