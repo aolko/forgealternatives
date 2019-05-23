@@ -9,3 +9,5 @@ All mods are being hosted at curseforge. This repository does not host any of th
 
 ## How can i help?
 Send some pull requests with your favourite mods in json format, template is provided in `pull_request_template.md` which will appear in the pull request form.
+
+You can check out the existing json files in `/json` dir.
