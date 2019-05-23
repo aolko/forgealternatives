@@ -1,18 +1,14 @@
 const gulp = require('gulp');
+const jsonConcat = require("gulp-json-concat");
 
 
 function defaultTask(cb) {
-    // place code for your default task here
-    var merge = require('gulp-merge-json');
-
-    /**
-     * Basic functionality
-     */
-    gulp.src('json/**/*.json')
-        .pipe(merge({
-            fileName: 'mods.json'
+        console.log("Concating all json files");
+        gulp.src('json/**/*.json')
+        .pipe(jsonConcat('mods.json',function(data){
+            return new Buffer(JSON.stringify(data));
         }))
-        .pipe(gulp.dest('./public'));
+        .pipe(gulp.dest('public'));
     cb();
 }
 
