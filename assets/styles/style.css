@@ -1,0 +1,387 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic&subset=latin,cyrillic);
+html {
+  box-sizing: border-box;
+}
+
+*::before,
+*,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #37474F;
+}
+
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  min-height: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+header .nav--left, header .nav--right {
+  display: flex;
+}
+header .nav--right {
+  margin-left: auto;
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header ul li:not(:first-child) {
+  margin: 0 0 0 10px;
+}
+header ul li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  transition: all 0.2s ease-in-out;
+}
+header ul li a:hover, header ul li a:active {
+  border-radius: 9999px;
+  background: white;
+  color: black;
+}
+
+main > section {
+  /*margin: 0 0 20px;
+  &:first-child{
+    margin: 20px 0;
+  }*/
+  margin: 20px 0;
+}
+main .splash {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #c31432 linear-gradient(to right, #c31432, #240b36);
+  color: white;
+  line-height: 1.5;
+}
+main .splash a {
+  text-decoration: none;
+  color: white;
+}
+main .splash .splash-actions {
+  margin: 20px 0 0 0;
+}
+main .splash .splash-actions .action-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background: black;
+  color: white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+main .splash .splash-actions .action-btn:hover, main .splash .splash-actions .action-btn:active {
+  border-radius: 2px;
+  background: black;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1, 1.1);
+}
+main .splash .splash-actions .action-btn.--primary {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background: #c31432;
+  color: white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+main .splash .splash-actions .action-btn.--primary:hover, main .splash .splash-actions .action-btn.--primary:active {
+  border-radius: 2px;
+  background: #950f26;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1, 1.1);
+}
+main .splash .splash-actions .action-btn:not(:first-child) {
+  margin: 0 0 0 10px;
+}
+main .search input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 12pt;
+  color: white;
+}
+main .search input[type=text]::placeholder {
+  font-style: italic;
+}
+main .info {
+  color: white;
+}
+main .info__mod {
+  display: flex;
+}
+main .info__mod .mod_icon {
+  margin: 0 20px 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+main .info__mod .mod_icon img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+main .info__mod .mod_heading {
+  margin: 0 0 20px 0;
+  display: inline-flex;
+  align-items: center;
+}
+main .info__mod .mod_heading h1 {
+  font-size: 1.5rem;
+}
+main .info__mod .mod_heading h1, main .info__mod .mod_heading h2, main .info__mod .mod_heading h3, main .info__mod .mod_heading h4, main .info__mod .mod_heading h5 {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+main .info__mod .mod_heading .mod_mcversion {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: #1a1a1a;
+}
+main .info__mod .mod_description {
+  margin: 0 0 50px 0;
+  color: #EEEEEE;
+}
+main .info__mod .mod_actions {
+  margin: 20px 0 0 0;
+}
+main .info__mod .mod_actions .action-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background: #212121;
+  color: white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+main .info__mod .mod_actions .action-btn:hover, main .info__mod .mod_actions .action-btn:active {
+  border-radius: 2px;
+  background: #080808;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1, 1.1);
+}
+main .info__mod .mod_actions .action-btn:not(:first-child) {
+  margin: 0 0 0 10px;
+}
+main .info__mod .mod_actions .action-btn.--primary {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background: #c31432;
+  color: white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+main .info__mod .mod_actions .action-btn.--primary:hover, main .info__mod .mod_actions .action-btn.--primary:active {
+  border-radius: 2px;
+  background: #950f26;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1, 1.1);
+}
+main .info__mod .mod_tags {
+  margin: 20px 0 0 0;
+}
+main .info__mod .mod_tags ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+main .info__mod .mod_tags ul li:not(:first-child) {
+  margin: 0 0 0 10px;
+}
+main .info__mod .mod_tags ul li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: #333333;
+  transition: all 0.2s ease-in-out;
+}
+main .info__mod .mod_tags ul li a:hover, main .info__mod .mod_tags ul li a:active {
+  background: #1a1a1a;
+  color: white;
+}
+main .alts {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 20px 0;
+  color: white;
+}
+main .alts h1, main .alts h2, main .alts h3, main .alts h4, main .alts h5 {
+  margin: 0 0 20px 0;
+}
+main .alt-item {
+  display: flex;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+  margin: 0 0 20px 0;
+}
+main .alt-item .left {
+  margin: 0 20px 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+main .alt-item .right {
+  flex: 1;
+}
+main .alt-item .mod_icon img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+main .alt-item .mod_heading {
+  margin: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+}
+main .alt-item .mod_heading h1 {
+  font-size: 1.5rem;
+}
+main .alt-item .mod_heading h1, main .alt-item .mod_heading h2, main .alt-item .mod_heading h3, main .alt-item .mod_heading h4, main .alt-item .mod_heading h5 {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  flex: 1;
+}
+main .alt-item .mod_heading .mod_mcversion {
+  display: inline-block;
+  margin-left: auto;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: #1a1a1a;
+}
+main .alt-item .mod_description {
+  margin: 0 0 10px 0;
+  color: #EEEEEE;
+}
+main .alt-item .mod_actions {
+  margin: 20px 0 0 0;
+}
+main .alt-item .mod_actions .action-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background: #212121;
+  color: white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+main .alt-item .mod_actions .action-btn:hover, main .alt-item .mod_actions .action-btn:active {
+  border-radius: 2px;
+  background: #080808;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1, 1.1);
+}
+main .alt-item .mod_actions .action-btn:not(:first-child) {
+  margin: 0 0 0 10px;
+}
+main .alt-item .mod_actions .action-btn.--primary {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background: #c31432;
+  color: white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+main .alt-item .mod_actions .action-btn.--primary:hover, main .alt-item .mod_actions .action-btn.--primary:active {
+  border-radius: 2px;
+  background: #950f26;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1, 1.1);
+}
+main .alt-item .mod_tags {
+  margin: 20px 0 0 0;
+}
+main .alt-item .mod_tags ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+main .alt-item .mod_tags ul li:not(:first-child) {
+  margin: 0 0 0 10px;
+}
+main .alt-item .mod_tags ul li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: #333333;
+  transition: all 0.2s ease-in-out;
+}
+main .alt-item .mod_tags ul li a:hover, main .alt-item .mod_tags ul li a:active {
+  background: #1a1a1a;
+  color: white;
+}
+main .alt-item.--msg {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px dashed rgba(0, 0, 0, 0.2);
+}
+main .alt-item.--msg h1, main .alt-item.--msg h2, main .alt-item.--msg h3, main .alt-item.--msg h4, main .alt-item.--msg h5 {
+  margin: unset;
+}
+
+/*# sourceMappingURL=style.css.map */
