@@ -1,11 +1,13 @@
-var modsJson = $.getJSON('mods.json');
-var options = {
-    keys: ["mcmod.name", "mcmod.tags"],
-    minMatchCharLength: 3,
-    shouldSort: true
-};
-var fuse = new Fuse(modsJson, options);
 $(function() {
+    var modsJson = JSON.stringify($.getJSON('mods.json'));
+    var options = {
+        minMatchCharLength: 3,
+        location: 1,
+        distance: 100,
+        keys: ["mcmod.name", "mcmod.tags"],
+        shouldSort: true
+    };
+    var fuse = new Fuse(modsJson, options);
     $('#searchbar').on('keyup', function () {
         let result = fuse.search($(this).val());
         console.log("val: "+$(this).val()+"; result: "+result.length);
