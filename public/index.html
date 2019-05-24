@@ -36,8 +36,11 @@
         </section>
         <section class="search">
             <form id="search" action="" method="post">
-                <input type="text" name="searchbar" placeholder="What are you searching for?">
+                <input type="text" id="searchbar" name="searchbar" placeholder="What are you searching for?">
             </form>
+            <ul class="searchresults">
+
+            </ul>
         </section>
         <section class="info">
             <article class="info__mod">
@@ -117,6 +120,8 @@
 <!--JS-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.4/fuse.min.js"></script>
+<script src="mods.json"></script>
 <script src="assets/js/main.js"></script>
 
 </body>
