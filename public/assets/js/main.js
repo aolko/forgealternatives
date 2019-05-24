@@ -1,4 +1,4 @@
-var modsJson = json.stringify($.getJSON('mods.json'));
+var modsJson = $.getJSON('mods.json');
 var options = {
     keys: ["mcmod.name", "mcmod.tags"],
     minMatchCharLength: 3,
