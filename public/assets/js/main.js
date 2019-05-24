@@ -1,4 +1,5 @@
 $(function() {
+    var fuse;
     var options = {
         minMatchCharLength: 3,
         location: 1,
@@ -8,7 +9,7 @@ $(function() {
     };
     $.getJSON('mods.json',function (data) {
         //console.log(data);
-        var fuse = new Fuse(data, options);
+        fuse = new Fuse(data, options);
         $('#searchbar').on('keyup', function () {
             let result = fuse.search($(this).val());
             console.log("val: "+$(this).val()+"; result: "+result.length);
@@ -28,5 +29,4 @@ $(function() {
             }
         });
     });
-
 });
